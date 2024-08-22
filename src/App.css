@@ -4,6 +4,7 @@
 @font-face {
   font-family: 'games';
   src: url('./games.ttf');
+ 
 }
 body {
   background-color: rgba(0, 0, 255, .7);
@@ -11,6 +12,12 @@ body {
   position: relative;
   width: 100vw;
   overflow-x: hidden;
+   text-shadow:
+    1px 1px 0 #fff,
+    -1px 1px 0 #fff,
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff;
+    letter-spacing: 3px;
 
 }
 #red {
@@ -29,7 +36,7 @@ body {
   color: orange;
 }
 .home {
-/*  display: flex;*/
+ 
 /*  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;*/
@@ -41,7 +48,7 @@ body {
 .top-container {
 /*  text-align: center;*/
   margin-top: calc(100vh/ 5);
-  margin-right: calc(100vw/ 2);
+/*  margin-right: calc(100vw/ 2);*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,48 +65,43 @@ body {
     margin-top: 10px;
     border-radius: 50%;
 }
-.carousel-container {
-  overflow-x: hidden;
+.rotate {
+  rotate: 40deg;
 }
 .carousel {
   display: flex;
-  flex-direction: column;
+ 
   align-items: center;
   background-color: rgba(0, 255, 255, .2);
-  height: 700px;
-  width: 700px;
-  border-radius: 415px;
-  position: absolute;
-  right: -350px;
-  top: calc(100vh/ 10);
-
-
+  height: 400px;
+  width: 100%;
+  margin-left: 70VW;
+  border-radius: 200px;
+  border: 5px double whitesmoke;
+  box-shadow: 2px 2px 2px 2px gray;
 }
-
+.carousel h1 {
+  margin-left: 10px;
+}
 .carousel-main-img {
-   position: relative;
-   margin-right: auto;
+  position: relative;
+    height: 175px;
+  width: 175px;
+    margin: 20px;
 
-   display: none;
+
 }
 
 .carousel-main-img img {
 
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 255, .2);
-  
-}
-.carousel-main-img img {
-  height: 250px;
-  width: 250px;
+  height: 175px;
+  width: 175px;
   border-radius: 50%;
   background-color: rgba(0, 255, 255, .2);
 
 }
 
-.carousel-main-img:nth-child(1),
+/*.carousel-main-img:nth-child(1),
 .carousel-main-img:nth-child(3) {
    margin-left: auto;
    margin-right: auto;
@@ -109,11 +111,6 @@ body {
 .carousel-main-img:nth-child(2){
   display: block;
 }
-.carousel-main-img img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, .2);
 
-}
 
+*/

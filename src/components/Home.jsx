@@ -57,6 +57,11 @@ const Home = () => {
 
 
 
+
+
+
+
+
 	return (
 	<div className="home">
 				<motion.div 
@@ -82,6 +87,7 @@ const Home = () => {
         			}
 	          	</motion.div>
         	<div className="top-container">
+
         		<div className="hometitle">
         		{array.map(letter=>{  
 			        //can choose in order or random
@@ -93,7 +99,10 @@ const Home = () => {
 			    })}
         		</div>
         		<div className="personal-image">
-          			<img src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/18ad0649-f2dd-410d-8842-2ba2aa486fdb/915b499c07b086b46c4d52e937a9a44c29568f13.jpg?submitted=1684654124201&host=wbd-images.prod-vod.h264.io&partner=beamcom&w=320"/>
+        		    <img src="./../public/32x32/tora32x32.png" height="50px"/>
+        			<img src="./../public/32x32/deadpool32x32.png" height="50px"/>
+          			<img src="./../public/32x32/ushio32x32.png" height="50px"/>
+
           		</div>
           		<p>My goal is to provide an oppurtunity for everyone
           		to have the game of there dreams, or at least be able to 

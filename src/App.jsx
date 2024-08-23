@@ -22,6 +22,7 @@ function App() {
   return (
     <div>
        <div className="header">
+        <img src="./../public/dancinbanana.gif" height="80px" />
 
       {title.map(letter=>{  
         //can choose in order or random
@@ -32,9 +33,13 @@ function App() {
         return (<h1 id={colorList[inorderNumber++]}>{letter} </h1>)
       }
         )}
+   
+
       </div>
      <Router />
           <h1 style={{textAlign: "center", marginTop: "100px"}}>WELCOME TO MY WORLD!</h1>  
+            <img style={{marginLeft: "auto"}} src="./../public/flamewizardfinal.gif" />
+
     </div>
   )
 }

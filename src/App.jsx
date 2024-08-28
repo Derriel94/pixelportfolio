@@ -1,6 +1,9 @@
-import React,{ useState, useEffect } from 'react'
+import React,{ useState, useEffect } from 'react';
 import './App.css';
-import Router from './router.jsx'
+import Router from './router.jsx';
+import Canvas from './Canvas.jsx';
+import dancingbannana from './assets/dancinbanana.gif'
+import flamewizard from './assets/flamewizardfinal.gif';
 
 function App() {
   const title = ['D','E','R','R','I','E','L','-','C','O','L','L','I','N','S','-','P','O','R','T','O','L','I','O'];
@@ -39,12 +42,12 @@ function App() {
         localStorage.removeItem("seenpop", true)
 
     }, 150000)
-    // 1000 = 1secon
+   
 
   return (
     <div>
        <div className="header">
-        <img src="./../public/dancinbanana.gif" height="80px" />
+        <img src={dancingbannana} height="80px" />
 
       {title.map(letter=>{  
         //can choose in order or random
@@ -61,11 +64,11 @@ function App() {
      <Router />
        <h1 style={{textAlign: "center", marginTop: "100px"}}>WELCOME TO MY WORLD!</h1>  
         <div className="game-section">
-            <div><img  src="./../public/flamewizardfinal.gif" /></div>
+            <div><img src={flamewizard} /></div>
                 <div className="game-window">
-
+                    <Canvas width="600" height="400" />
                 </div>
-            <div className={ windowWidth < 500? "hidden": "show"}><img  src="./../public/flamewizardfinal.gif" /></div>
+            <div className={ windowWidth < 500? "hidden": "show"}><img src={flamewizard} /></div>
         </div>
     </div>
   )

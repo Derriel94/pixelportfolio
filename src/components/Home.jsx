@@ -1,5 +1,8 @@
 import React,{ useState } from 'react'
 import { motion, useTransform, useMotionValue, useMotionValueEvent } from "framer-motion";
+import tora from './../assets/32x32/tora32x32.png'
+import deadpool from './../assets/32x32/deadpool32x32.png'
+import ushio from './../assets/32x32/ushio32x32.png'
 
 
 
@@ -99,9 +102,9 @@ const Home = () => {
 			    })}
         		</div>
         		<div className="personal-image">
-        		    <img src="./../public/32x32/tora32x32.png" height="50px"/>
-        			<img src="./../public/32x32/deadpool32x32.png" height="50px"/>
-          			<img src="./../public/32x32/ushio32x32.png" height="50px"/>
+        		    <img src={tora} height="50px"/>
+        			<img src={deadpool} height="50px"/>
+          			<img src={ushio} height="50px"/>
 
           		</div>
           		<p>My goal is to provide an oppurtunity for everyone

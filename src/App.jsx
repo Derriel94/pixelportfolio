@@ -42,6 +42,14 @@ function App() {
         localStorage.removeItem("seenpop", true)
 
     }, 150000)
+
+
+    const draw = (context,count) => {
+        context.clearRect(0,0, context.canvas.width, context.canvas.height)
+        context.fillStyle = 'black';
+        context.fillRect(0,0,600,400);
+
+    }
    
 
   return (
@@ -66,7 +74,7 @@ function App() {
         <div className="game-section">
             <div><img src={flamewizard} /></div>
                 <div className="game-window">
-                    <Canvas width="600" height="400" />
+                    <Canvas draw={draw} width="600" height="400" />
                 </div>
             <div className={ windowWidth < 500? "hidden": "show"}><img src={flamewizard} /></div>
         </div>

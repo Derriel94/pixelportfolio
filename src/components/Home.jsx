@@ -49,7 +49,7 @@ const Home = () => {
 			
 				
 		}
-		// setCurrentItems()
+		setCurrentItems()
 		
 	}
 
